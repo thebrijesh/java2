@@ -30,7 +30,32 @@ public class maxSumPickElements {
 
         return maxSum;
     }
+public static int maxSumPickElements2(int[] A , int B){
+    int n = A.length;
+    int maxSum = Integer.MIN_VALUE;
 
+    // Try all possible combinations of B elements from either the left or right end
+    for (int i = 0; i <= B; i++) {
+        for (int j = 0; j <= B - i; j++) {
+            int currentSum = 0;
+
+            // Pick elements from the left end
+            for (int k = 0; k < i; k++) {
+                currentSum += A[k];
+            }
+
+            // Pick elements from the right end
+            for (int k = n - 1; k >= n - j; k--) {
+                currentSum += A[k];
+            }
+
+            // Update maxSum if necessary
+            maxSum = Math.max(maxSum, currentSum);
+        }
+    }
+
+    return maxSum;
+}
     // Helper function to calculate the sum of an integer array
     private static int sumArray(int[] arr) {
         int sum = 0;
