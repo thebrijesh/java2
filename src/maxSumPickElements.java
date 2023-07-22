@@ -30,7 +30,7 @@ public class maxSumPickElements {
 
         return maxSum;
     }
-    // Brute force Approach 1
+    // Brute force Approach 2
 public static int maxSumPickElements2(int[] A , int B){
     int n = A.length;
     int maxSum = Integer.MIN_VALUE;
