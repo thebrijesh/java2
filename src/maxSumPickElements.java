@@ -17,8 +17,8 @@ public class maxSumPickElements {
             }
 
             // Pick elements from the right end
-            for (int j = 0; j < B - i; j++) {
-                rightElements[j] = A[n - B + i + j];
+            for (int k = 0; k < B - i; k++) {
+                rightElements[k] = A[n - B + i + k];
             }
 
             // Calculate the sum of the picked elements
@@ -30,6 +30,7 @@ public class maxSumPickElements {
 
         return maxSum;
     }
+    // Brute force Approach 1
 public static int maxSumPickElements2(int[] A , int B){
     int n = A.length;
     int maxSum = Integer.MIN_VALUE;
@@ -45,8 +46,8 @@ public static int maxSumPickElements2(int[] A , int B){
             }
 
             // Pick elements from the right end
-            for (int k = n - 1; k >= n - j; k--) {
-                currentSum += A[k];
+            for (int l = n - 1; l >= n - j; l--) {
+                currentSum += A[l];
             }
 
             // Update maxSum if necessary
@@ -56,6 +57,8 @@ public static int maxSumPickElements2(int[] A , int B){
 
     return maxSum;
 }
+
+
     // Helper function to calculate the sum of an integer array
     private static int sumArray(int[] arr) {
         int sum = 0;
@@ -70,9 +73,11 @@ public static int maxSumPickElements2(int[] A , int B){
             int[] A1 = {5, -2, 3, 1, 2};
             int B1 = 3;
             System.out.println(maxSumPickElements(A1, B1)); // Output: 8
+            System.out.println(maxSumPickElements2(A1, B1)); // Output: 8
 
             int[] A2 = {1, 2};
             int B2 = 1;
             System.out.println(maxSumPickElements(A2, B2)); // Output: 2
+            System.out.println(maxSumPickElements2(A2, B2)); // Output: 2
     }
 }
