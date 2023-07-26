@@ -1,4 +1,13 @@
 public class MaxSubarraySum {
+    public void pseudocode(){
+        //max =0
+        //for i = 0 to nums.length
+        // curent sum  = 0;
+        //for j from i to nums.length
+        // currentsum = currentsum + nums[j];
+        // compare max and current sum (big in both of them these value insert in max)
+        // return max
+    }
     public static int maxSubarraySum(int[] nums) {
         int n = nums.length;
         int maxSum = Integer.MIN_VALUE;
