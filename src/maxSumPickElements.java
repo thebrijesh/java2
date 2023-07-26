@@ -15,6 +15,38 @@ public class maxSumPickElements {
 //        9) after declaring a global max-sum variable this default value is 0.
 //        10) the third loop completed own all iterations after comparing the current sum and the maxsum.
 //        11) if the current sum is big to the maxsum so insert the current sum value to the maxsum variable and if not big does not insert.
+
+//        function maximumSumAfterBRemovals(A: array of integers, B: integer) -> integer:
+//        N = length of A
+//        maxSum = 0
+//
+//        for i from 0 to B:
+//        // Create two arrays to store the sum of elements from both sides of A
+//        array1 = new array of size i
+//                array2 = new array of size B - i
+//
+//        // Calculate the sum of the first i elements of A and store them in array1
+//        sum1 = 0
+//        for j from 0 to i-1:
+//        array1[j] = A[j]
+//        sum1 += A[j]
+//
+//        // Calculate the sum of the last B-i elements of A and store them in array2
+//        sum2 = 0
+//        for k from N-1 to N-B by -1:
+//        array2[N-k-1] = A[k]
+//        sum2 += A[k]
+//
+//        // Calculate the current sum by adding the elements of array1 and array2
+//        currentSum = sum1 + sum2
+//
+//        // Update maxSum if the current sum is greater
+//        maxSum = maximum of maxSum and currentSum
+//
+//        return maxSum
+
+
+
     }
     // Brute force Approach 1
     public static int maxSumPickElements(int[] A, int B) {
