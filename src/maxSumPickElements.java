@@ -1,6 +1,21 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class maxSumPickElements {
+    public static void pseudocode(){
+//        1) takes a for loop(i) and it iterates 0 to b because operations are b time. 2) make two arrays.
+//            array1 and array 2. Array 1 size is [ I ] and array 2 size of [ b-i ].
+//            I make two arrays because I will sum of both sides of Array A.
+//        3) because I will take another two loops.
+//        5) the second loop(j) iterates 0 < i. and the third loop(k) iterates 0 < b-i
+//        6) when the second loop iterates then values of array A stored in array 1.
+//           by sum1 variable(position of I in array A ).
+//        7) when the third loop iterates the last b-i elements go to array A to array 2  by sum2 variable.
+//        8) when getting the elements in variable sum1 and sume2 after the sum of these elements stored in the name of the variable is a current sum.
+//           this variable declares under the first loop because, in every iteration of the first loop, this variable value is 0.
+//        9) after declaring a global max-sum variable this default value is 0.
+//        10) the third loop completed own all iterations after comparing the current sum and the maxsum.
+//        11) if the current sum is big to the maxsum so insert the current sum value to the maxsum variable and if not big does not insert.
+    }
     // Brute force Approach 1
     public static int maxSumPickElements(int[] A, int B) {
         int n = A.length;
