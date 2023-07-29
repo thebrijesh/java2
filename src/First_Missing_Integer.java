@@ -2,6 +2,7 @@ import java.util.Arrays;
 
 public class First_Missing_Integer {
 public static void pseudocode(){
+//    https://leetcode.com/problems/first-missing-positive/
     //i will sort the array because i finding first missing element in array.
     // make a variable; smallestMissing =0;
     //after take a for each loop and check (num == smallestMissing) is true so smallestMissing++;

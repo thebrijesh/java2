@@ -4,6 +4,7 @@ import java.util.List;
 public class Insert_Interval {
 
     public void pseudocode(){
+//        https://leetcode.com/problems/insert-interval/
 //        int[][] intervals2 = {{1, 2}, {3, 5}, {6, 7}, {8, 10}, {12, 16}};
 //        int[] newInterval2 = {4, 8};
 //        make a list;

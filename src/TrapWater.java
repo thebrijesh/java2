@@ -1,5 +1,6 @@
 public class TrapWater {
     public static void pseudocode() {
+//        https://leetcode.com/problems/trapping-rain-water/
 //        declare the first loop
 //        n= h.length
 //        leftmax =0 ;

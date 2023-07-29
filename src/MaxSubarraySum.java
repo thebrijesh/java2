@@ -1,5 +1,6 @@
 public class MaxSubarraySum {
     public void pseudocode(){
+//        https://leetcode.com/problems/maximum-subarray/
         //max =0
         //for i = 0 to nums.length
         // curent sum  = 0;

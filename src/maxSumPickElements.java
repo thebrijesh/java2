@@ -1,7 +1,8 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
 public class maxSumPickElements {
-    public static void pseudocode(){
+    public void pseudocode(){
+       // https://www.interviewbit.com/problems/pick-from-both-sides/
 //        1) takes a for loop(i) and it iterates 0 to b because operations are b time. 2) make two arrays.
 //            array1 and array 2. Array 1 size is [ I ] and array 2 size of [ b-i ].
 //            I make two arrays because I will sum of both sides of Array A.
