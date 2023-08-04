@@ -26,7 +26,7 @@ public class Rotationgame {
         printArray(arr);
     }
 
-    private static void printArray(int[] arr) {
+    public static void printArray(int[] arr) {
         for (int num : arr) {
             System.out.print(num+" ");
         }
