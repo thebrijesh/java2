@@ -19,9 +19,9 @@ public class FindNumberOfNumbers {
 
 
     public static void main(String[] args) {
-        int[] arr = {100,120,1111,5551,2512};
+        int[] arr = {100,120,1111,5551,2512,11};
         int k = 1;
 
-        System.out.println(num(arr,5,k));
+        System.out.println(num(arr,6,k));
     }
 }
