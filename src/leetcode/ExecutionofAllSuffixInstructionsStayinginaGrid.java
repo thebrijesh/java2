@@ -8,21 +8,21 @@ public class ExecutionofAllSuffixInstructionsStayinginaGrid {
             int cal = nums[1];
             int count = 0;
             for (int j = i; j < s.length(); j++) {
-                if(s.charAt(j) == 'R'){
+                if (s.charAt(j) == 'R') {
                     cal++;
 
-                } else if(s.charAt(j) == 'D'){
+                } else if (s.charAt(j) == 'D') {
                     raw++;
-                }else if(s.charAt(j) == 'L'){
+                } else if (s.charAt(j) == 'L') {
                     cal--;
-                }else if(s.charAt(j) == 'U'){
+                } else if (s.charAt(j) == 'U') {
                     raw--;
                 }
-                if(raw >= 0 && cal >= 0 && raw < n && cal < n){
+                if (raw >= 0 && cal >= 0 && raw < n && cal < n) {
                     count++;
 
-                }else {
-                   break;
+                } else {
+                    break;
                 }
             }
             arr[i] = count;
@@ -30,16 +30,16 @@ public class ExecutionofAllSuffixInstructionsStayinginaGrid {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-    return arr;
+        return arr;
     }
 
 
     public static void main(String[] args) {
         int n = 3;
-        int [] arr =new int[2];
+        int[] arr = new int[2];
         arr[0] = 0;
         arr[1] = 1;
         String s = "RRDDLU";
-        executeInstructions(n,arr,s);
+        executeInstructions(n, arr, s);
     }
 }
