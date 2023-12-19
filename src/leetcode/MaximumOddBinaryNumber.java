@@ -34,8 +34,10 @@ public class MaximumOddBinaryNumber {
 
         return s;
     }
+
     public static void main(String[] args) {
     String a = "1011010";
     maximumOddBinaryNumber(a);
+
     }
 }
