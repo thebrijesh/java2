@@ -8,7 +8,6 @@ public class GenerateParentheses {
     static char value = '"';
 
     public static void rec(int n, int ob, int cb, StringBuilder s) {
-        System.out.println("n: " + n + " ||" + " ob: " + ob + " ||" + " cb: " + cb + " ||" + " str: " + value + s + value);
         if (ob > n || cb > n) {
             return;
         }
