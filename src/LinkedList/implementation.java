@@ -1,5 +1,8 @@
 package LinkedList;
 
+import static LinkedList.implementation.linkedlist.display;
+import static LinkedList.implementation.linkedlist.head;
+
 public class implementation {
     public static class Node{
         int data;
@@ -13,7 +16,7 @@ public class implementation {
         }
     }
     public static class linkedlist{
-         Node head ;
+        public static Node head ;
          Node tail ;
          int size = 0;
          void insertAtEnd(int val){
@@ -59,8 +62,8 @@ public class implementation {
              temp.next = newHead;
              size++;
          }
-         void display(){
-             Node temp = head;
+         public static void display(Node head){
+             Node temp = linkedlist.head;
              while (temp != null){
                  System.out.println(temp.data+" ");
                  temp = temp.next;
@@ -92,15 +95,16 @@ public class implementation {
              return size;
          }
     }
+    public static linkedlist ll = new linkedlist();
     public static void main(String[] args) {
-        linkedlist ll = new linkedlist();
+
+        ll.insertAtEnd(1);
+        ll.insertAtEnd(2);
+        ll.insertAtEnd(3);
         ll.insertAtEnd(4);
         ll.insertAtEnd(5);
 
-        ll.insertAtBeginning(6);
 
-        ll.insertAt(1,3);
-        ll.display();
 
     }
 }

@@ -15,8 +15,25 @@ public class NQueens {
     }
 
     public static void main(String[] args) {
-        int n = 4;
-        System.out.println(solveNQueens(n));
+        int n = 8;
+        int count = 0;
+        int max = 0;
+//        System.out.println(solveNQueens(n));
+        List<List<String>> lists = solveNQueens(n);
+        for (List<String> list:lists) {
+            count = 0;
+            for (int i = 0; i < list.size(); i++) {
+                for (var c: list.get(i).toCharArray()) {
+                    if (c == 'Q'){
+                        count++;
+                    }
+                }
+            }
+            max = Math.max(max,count);
+        }
+
+        System.out.println(lists);
+        System.out.println(max);
     }
 
     static List<List<String>> list = new ArrayList<>();
